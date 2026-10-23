@@ -1,0 +1,30 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Local Android SDK configuration
+local.properties
+
+# Generated Android files
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing and service credentials
+*.jks
+*.keystore
+google-services.json
+secrets.properties
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
