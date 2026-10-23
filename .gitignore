@@ -1,5 +1,6 @@
 # Gradle
 .gradle/
+.kotlin/
 build/
 !gradle/wrapper/gradle-wrapper.jar
 
@@ -8,6 +9,13 @@ build/
 *.iml
 *.ipr
 *.iws
+*.hprof
+
+# Android Studio user-specific metadata
+*.log
+lint-results*.html
+lint-results*.xml
+dependency-locks/
 
 # Local Android SDK configuration
 local.properties
@@ -17,14 +25,40 @@ local.properties
 captures/
 .externalNativeBuild/
 .cxx/
+*.apk
+*.aab
+*.ap_
+output-metadata.json
+
+# Generated test and profiling output
+test-results/
+connected/
+screenshots/
+benchmark/
 
 # Signing and service credentials
 *.jks
 *.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
 google-services.json
 secrets.properties
+*.properties
+!gradle.properties
+
+# Environment and secret files
+.env
+.env.*
+!.env.example
+*.env
+*.secret
+*.credentials
 
 # OS/editor files
 .DS_Store
 Thumbs.db
 *.swp
+*~
