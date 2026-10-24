@@ -36,19 +36,13 @@ class PermissionViewModelTest {
     @Test
     fun uiState_initiallyLoading() = runTest {
         val viewModel = PermissionViewModel(FakePermissionRepository())
-        assertEquals(
-            PermissionUiState.Success(emptyList()),
-            viewModel.uiState.first()
-        )
+        assertEquals(PermissionUiState.Loading, viewModel.uiState.first())
     }
 
     @Test
     fun uiState_onItemSaved_isDisplayed() = runTest {
         val viewModel = PermissionViewModel(FakePermissionRepository())
-        assertEquals(
-            PermissionUiState.Success(emptyList()),
-            viewModel.uiState.first()
-        )
+        assertEquals(PermissionUiState.Loading, viewModel.uiState.first())
     }
 }
 
